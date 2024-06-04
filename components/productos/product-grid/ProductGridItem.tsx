@@ -9,7 +9,7 @@ interface Props {
     product: Product
 }
 
-const ProductGridItem = ({product}:Props) => {
+export const ProductGridItem = ({product}:Props) => {
 
   const [ displayImage, setDisplayImage] = useState(product.images[0])
 
@@ -27,7 +27,7 @@ const ProductGridItem = ({product}:Props) => {
                 onMouseLeave={() => setDisplayImage(product.images[0])}
                 />
         </Link>
-
+        
         <div className="p-4 flex flex-col">
             <Link
                 className="hover:text-blue-500" 
@@ -40,4 +40,3 @@ const ProductGridItem = ({product}:Props) => {
   )
 }
 
-export default ProductGridItem

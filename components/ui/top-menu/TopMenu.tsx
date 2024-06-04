@@ -5,7 +5,7 @@ import { IoSearchOutline, IoCartOutline } from 'react-icons/io5'
 import { titleFont } from '@/config/fonts'
 import { useUIStore } from '@/store/ui/ui-store'
 
-const TopMenu = () => {
+export const TopMenu = () => {
   const openSideMenu = useUIStore(state => state.openSideMenu);
   return (
     <nav className="flex px-5 justify-between items-center w-full">
@@ -18,7 +18,7 @@ const TopMenu = () => {
       <div className="hidden sm:block">
          <Link className="m-2 p-2 rouded-md transition-all hover:bg-gray-100" href="/category/men">Hombres</Link>
          <Link className="m-2 p-2 rouded-md transition-all hover:bg-gray-100" href="/category/women">Mujeres</Link>
-         <Link className="m-2 p-2 rouded-md transition-all hover:bg-gray-100" href="/category/kids">Niños</Link>
+         <Link className="m-2 p-2 rouded-md transition-all hover:bg-gray-100" href="/category/kid">Niños</Link>
       </div>
 
       <div className="flex items-center mt-2">
@@ -44,4 +44,4 @@ const TopMenu = () => {
   )
 }
 
-export default TopMenu
+ 

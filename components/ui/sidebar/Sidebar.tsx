@@ -7,7 +7,7 @@ import Link from 'next/link'
 import React from 'react'
 import { IoCloseOutline, IoLogInOutline, IoLogOutOutline, IoPeopleOutline, IoPersonOutline, IoSearchOutline, IoShirtOutline, IoTicketOutline} from 'react-icons/io5'
 
-const Sidebar = () => {
+export const Sidebar = () => {
   const isSideMenuOpen = useUIStore(state => state.isSideMenuOpen);
   const closeMenu = useUIStore(state => state.closeSideMenu);
   return (
@@ -112,5 +112,3 @@ const Sidebar = () => {
     </div>
   )
 }
-
-export default Sidebar
