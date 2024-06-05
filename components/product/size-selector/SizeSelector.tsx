@@ -8,8 +8,6 @@ interface Props{
 }
 export const SizeSelector = ({selectedSize, avaibleSizes}: Props) => {
 
-
-
   return (
     <div className="my-5">
     <h3 className="font-bold mb-4"> Tallas disponibles</h3>
