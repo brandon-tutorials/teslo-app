@@ -6,7 +6,7 @@ interface Props{
     className?:string
 }
 
-export default function({title,subtitle,className}:Props) {
+export const Title = ({title,subtitle,className}:Props) => {
   return (
     <div className={`mt-t ${className}`}>
       <h1 className={`${titleFont.className} antialiased text-4xl font-semibold my-7`}>

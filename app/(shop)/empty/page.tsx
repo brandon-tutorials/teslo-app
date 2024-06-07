@@ -1,15 +1,28 @@
 import { titleFont } from "@/config/fonts";
+import { IoCardOutline } from "react-icons/io5";
+import Link from "next/link";
+
 
 export default function () {
+
+
   return (
+    <div className="flex justify-center items-center h-[800px]">
+      <IoCardOutline size={80} className="mx-5"/>
 
-    <main>
- <div className="mt-5 mb-20 grid grid-cols-3 ">
-    <div className=" col-span-1 bg-green-400">A</div>
-    <div className="bg-green-500">B</div>
-</div>
+      <div className="flex flex-col items-center">
 
-    </main>
+      <h1 className="text-xl font-semibold">
+          Tu carrito está vacio
+        </h1>
+      <Link 
+       href="/"
+       className="text-blue-500 mt-2 text-4xl">
+        Regresar
+       </Link>
 
+      </div>
+
+    </div>
   );
 }
